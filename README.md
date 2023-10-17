@@ -34,7 +34,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_admin_username"></a> [admin\_username](#input\_admin\_username) | Admin username | `string` | `"admin"` | no |
-| <a name="input_databases"></a> [databases](#input\_databases) | n/a | <pre>map(object({<br>    db                    = string<br>    db_user               = string<br>    db_user_password      = string<br>    default_character_set = optional(string, "latin1")<br>    default_collation     = optional(string, "latin1_swedish_ci")<br>  }))</pre> | n/a | yes |
+| <a name="input_databases"></a> [databases](#input\_databases) | Creates multiple databases with users for each one | <pre>map(object({<br>    db                    = string<br>    db_user               = string<br>    db_user_password      = string<br>    default_character_set = optional(string, "latin1")<br>    default_collation     = optional(string, "latin1_swedish_ci")<br>  }))</pre> | n/a | yes |
 
 ## Outputs
 

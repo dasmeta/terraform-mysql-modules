@@ -16,8 +16,3 @@ resource "mysql_grant" "admin_grant" {
   database   = "%"
   privileges = ["ALL"]
 }
-
-output "admin_user_password" {
-  value     = random_password.password.result
-  sensitive = true
-}

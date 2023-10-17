@@ -6,6 +6,7 @@ variable "databases" {
     default_character_set = optional(string, "latin1")
     default_collation     = optional(string, "latin1_swedish_ci")
   }))
+  description = "Creates multiple databases with users for each one"
 }
 
 variable "admin_username" {
